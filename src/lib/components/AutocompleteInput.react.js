@@ -163,4 +163,9 @@ AutocompleteInput.propTypes = {
      * If true, then an Tab keypress is passed on (after being used to autocomplete) to the next form input.
      */
     passThroughTab: PropTypes.bool,
+
+    /**
+     * autofocus
+     */
+    autoFocus: PropTypes.bool,
 };
