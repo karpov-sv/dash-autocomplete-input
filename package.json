@@ -2,7 +2,7 @@
   "name": "dash-autocomplete-input",
   "version": "0.0.1",
   "description": "Dash component wrapper for `react-autocomplete-input`",
-"repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/karpov-sv/dash-autocomplete-input.git"
   },
@@ -24,7 +24,8 @@
   "author": "Sergey Karpov <karpov.sv@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "react-autocomplete-input": "^1.0.29"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

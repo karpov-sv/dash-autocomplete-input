@@ -278,3 +278,20 @@ GitHub.sublime-settings
 # Julia manifest file names
 Manifest.toml
 JuliaManifest.toml
+
+# Local
+inst/
+deps/
+Project.toml
+NAMESPACE
+DESCRIPTION
+.Rbuildignore
+R/
+man/
+*.jl
+package-lock.json
+*.min.js
+*.min.js.map
+*/metadata.json
+*/package-info.json
+dash_autocomplete_input/AutocompleteInput.py
