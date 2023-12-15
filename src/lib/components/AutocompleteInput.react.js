@@ -6,12 +6,24 @@ import TextInput from 'react-autocomplete-input';
 import 'react-autocomplete-input/dist/bundle.css';
 
 export default class AutocompleteInput extends Component {
+    constructor(props) {
+        super(props);
+
+        this.input = React.createRef();
+    }
+
+    componentDidUpdate(prevProps) {
+        /* Forward external changes to inner component */
+        this.input.current.refInput.current.value = this.props.value;
+    }
+
     render () {
         const {id, setProps, value, n_submit, component, quoteWhitespaces, ...other} = this.props;
 
         return <TextInput
                  id={id}
-                 value={value}
+                 ref={this.input}
+                 defaultValue={value}
                  Component={component}
                  onChange={
                      value => setProps({ value: value })

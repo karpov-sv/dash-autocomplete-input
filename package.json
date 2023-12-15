@@ -1,6 +1,6 @@
 {
   "name": "dash-autocomplete-input",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Dash component wrapper for `react-autocomplete-input`",
   "repository": {
     "type": "git",
