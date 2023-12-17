@@ -1,6 +1,6 @@
 {
   "name": "dash-autocomplete-input",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dash component wrapper for `react-autocomplete-input`",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "ramda": "^0.26.1",
-    "react-autocomplete-input": "^1.0.29"
+    "react-autocomplete-input": "file:../react-autocomplete-input"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

@@ -13,8 +13,12 @@ export default class AutocompleteInput extends Component {
     }
 
     componentDidUpdate(prevProps) {
+        /* Focus the input component */
+        this.input.current.refInput.current.focus();
         /* Forward external changes to inner component */
         this.input.current.refInput.current.value = this.props.value;
+        /* Trigger the menu if appropriate */
+        this.input.current.handleChange({ target: this.input.current.refInput.current });
     }
 
     render () {
