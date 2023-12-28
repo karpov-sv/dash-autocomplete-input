@@ -158,7 +158,10 @@ AutocompleteInput.propTypes = {
     /**
      * Remove spacer if user inputs one of these characters.
      */
-    spaceRemovers: PropTypes.string,
+    spaceRemovers: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object
+    ]),
 
     /**
      * Character which is inserted along with the selected option.
@@ -184,4 +187,9 @@ AutocompleteInput.propTypes = {
      * autofocus
      */
     autoFocus: PropTypes.bool,
+
+    /**
+     * Do case-insensitive comparison with the trigger
+     */
+    ignoreCase: PropTypes.bool,
 };
