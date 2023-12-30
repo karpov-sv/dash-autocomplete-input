@@ -192,4 +192,9 @@ AutocompleteInput.propTypes = {
      * Do case-insensitive comparison with the trigger
      */
     ignoreCase: PropTypes.bool,
+
+    /**
+     * Prevent triggering inside the word
+     */
+    triggerInsideWord: PropTypes.bool,
 };
